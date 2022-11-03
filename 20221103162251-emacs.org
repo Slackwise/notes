@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       39e69c3e-e795-46aa-afc4-8d3c360f4582
+:END:
+#+title: Emacs
+
+* Finding Documentation
+(Write out a list of all functions to find documentation and keybinds.)
