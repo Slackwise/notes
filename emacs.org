@@ -8,4 +8,8 @@
 
 * Setting up Org-roam
 - Depends on sqlite, and GCC/make/etc.
-- Install `build-essential` on Ubuntu.
+- Install =build-essential= on Ubuntu.
+
+* Doom Emacs
+- Keeps compiled packages in =./src/doomemacs/.local/=.
+- Keeps cache data in =./src/doomemacs/.local/cache/=.
