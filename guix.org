@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       15f6e1bb-8e73-435e-9d75-793fe1e4079b
+:END:
+#+title: Guix
+#+filetags: linux
+
+* Common Actions
+** Export Profile Packages: ~guix package --export-manifest~
