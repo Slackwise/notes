@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       11403734-d689-4eab-bb44-e7050b415d70
+:END:
+#+title: ReactJS
+#+filetags: web webdev programming javascript frontend
+
+* React Hooks
+** General Rules
+Functions must be immutable (or at least functionally "immutable").
+Hooks must fire in the same order, every time. (Place them at the top of the function!)
+** ~useState()~
+State will be preserved between re-renders.
+Does *not merge* state values with the state setter! You need to merge on your own.
+** ~useEffect()~
+** ~useRef()~
