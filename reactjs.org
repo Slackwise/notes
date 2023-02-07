@@ -6,8 +6,9 @@
 
 * React Hooks
 ** General Rules
-- Functions must be immutable (or at least functionally "immutable").
-- Hooks must fire in the same order, every time. (Place them at the top of the function!)
+1. Functions must be pure (or at least functionally "pure").
+2. Hooks must fire in the same order, every time.
+3. Only call Hooks *at the top level* (in order to satisfy rule #2). Don’t call Hooks inside loops, conditions, or nested functions.
 ** ~useState()~
 - State will be preserved between re-renders.
 - Does *not merge* state values with the state setter! You need to merge on your own.
