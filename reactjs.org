@@ -13,6 +13,7 @@
 - State will be preserved between re-renders.
 - Does *not merge* state values with the state setter! You need to merge on your own.
 - The only argument is the initial state.
+- Initial state is only set and executed on first render.
 - Returns values in the order you initialized them, which is why the *order of execution must not change*.
 ** ~useEffect()~
 ** ~useRef()~
