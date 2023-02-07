@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       ccc9dcca-cfa6-4660-9237-5b7766c58241
+:END:
+#+title: Org Mode
+#+filetags: emacs
+
+* Inline Formatting
+- *​*Bold*​*
+- /​/Italic/​/
+- _​_Underline_​_
+- ~​~Code~​~
+- =​=Verbatim=​=
+- +​+Strikethrough+​+
