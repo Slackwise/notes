@@ -13,3 +13,9 @@
 * Doom Emacs
 - Keeps compiled packages in =./src/doomemacs/.local/=.
 - Keeps cache data in =./src/doomemacs/.local/cache/=.
+
+* ibuffer-mode
+Used for managing Emacs buffers. Bound to ~SPC b i~ in Doom by default.
+** Commands
+- ~d~ to "Delete" (kill) a buffer
+- ~x~ to eXecute deletions (kills) of buffers marked with =D=
