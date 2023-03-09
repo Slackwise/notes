@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       bb166159-76d9-4192-986e-5155e53882e2
+:END:
+#+title: Bash
+#+filetags: linux unix programming operatingsystems
+
+* Globbing
+You can find the first matching file with a wildcard if you use parens when assigning it to a variable:
+#+begin_src bash
+ch=(/bin/ch*)
+echo $ch
+# prints /bin/chattr
+#+end_src
