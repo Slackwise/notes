@@ -14,7 +14,7 @@ You have several options, from best to worst in terms of long-term maintenance:
 - Customize Variables
 - Event Hooks
 - Advice Functions
-- Overwrite Functions
+- Overwrite Functions (Use ~with-eval-after-load~!)
 
 * Setting up Org-Roam
 - Depends on sqlite:
