@@ -1,3 +1,1 @@
-#+title: Public Notes
-
 These are my public notes, that will be used to generate all of SLACKWISE.NET, including the blog.
