@@ -4,9 +4,9 @@ Org-Mode
 Inline Formatting
 -----------------
 
--   \*\**Bold*\*\*
--   /*​Italic*/
--   _\_Underline\__
+-   `*Bold*`
+-   `/​Italic/`
+-   `_Underline_`
 -   ​`~Code~`
 -   `=​Verbatim=`
--   ~~+​Strikethrough+~~
+-   `+​Strikethrough+`
