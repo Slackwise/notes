@@ -1,7 +1,7 @@
 ---
 foam_template:
   filepath: "private/$FOAM_SLUG.md"
-date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}
+date: ${FOAM_DATE_YEAR}-${FOAM_DATE_MONTH}-${FOAM_DATE_DATE}
 published: false
 categories: notes
 tags:
