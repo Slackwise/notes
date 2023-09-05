@@ -1,3 +1,6 @@
 {
-  "accentColor": ""
+  "accentColor": "",
+  "theme": "system",
+  "monospaceFontFamily": "Roboto Mono",
+  "textFontFamily": "Roboto"
 }

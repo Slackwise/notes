@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "e6da124233a5530f",
+        "id": "9e88b61a56b8c10b",
         "type": "tabs",
         "children": [
           {
-            "id": "97e94657f296bc4a",
+            "id": "fc162d33e58ae7b5",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {}
             }
           }
@@ -125,8 +125,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -138,9 +137,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "97e94657f296bc4a",
+  "active": "fc162d33e58ae7b5",
   "lastOpenFiles": [
+    "emacs.md",
+    "notes-private/work/falcon-presidents-meeting.md",
+    "notes-private/README.md",
+    "bash.md",
     "guix.md",
+    "reactjs.md",
     "org-mode.md"
   ]
 }
