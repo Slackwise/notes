@@ -13,16 +13,17 @@ If you want to see what packages the current user has explicitly installed via `
 
 If you want to generate a file that can be used to rebuild a profile's packages/environment, then `guix package --export-manifest` will export a Guile script. The following is an example manifest file for my WSL Doom Emacs config, with notable comments at the top:
 
-    ;; This "manifest" file can be passed to 'guix package -m' to reproduce
-    ;; the content of your profile.  This is "symbolic": it only specifies
-    ;; package names.  To reproduce the exact same profile, you also need to
-    ;; capture the channels being used, as returned by "guix describe".
-    ;; See the "Replicating Guix" section in the manual.
-    
-    (specifications->manifest
-      (list "ripgrep"
-            "emacs-org-roam"
-            "emacs"
-            "emacs-sqlite"
-            "emacs-all-the-icons"))
+```lisp
+;; This "manifest" file can be passed to 'guix package -m' to reproduce
+;; the content of your profile.  This is "symbolic": it only specifies
+;; package names.  To reproduce the exact same profile, you also need to
+;; capture the channels being used, as returned by "guix describe".
+;; See the "Replicating Guix" section in the manual.
 
+(specifications->manifest
+  (list "ripgrep"
+        "emacs-org-roam"
+        "emacs"
+        "emacs-sqlite"
+        "emacs-all-the-icons"))
+```
