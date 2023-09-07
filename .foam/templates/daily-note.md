@@ -7,7 +7,6 @@ published: false
 categories: notes
 tags:
   - daily
-  - untagged
 ---
 
 Daily Notes for ${FOAM_DATE_MONTH_NAME} ${FOAM_DATE_DATE}, ${FOAM_DATE_YEAR}
