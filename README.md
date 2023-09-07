@@ -13,7 +13,8 @@ So I exported to Markdown.
 
 Now I use [[Foam]] primarily, but I'm free to also mix in any use of [Obsidian] and [Logseq], and publish via [Eleventy], GitHub Pages (which uses [Jekyll]), or to my shared work developer notes in [HackMD]. All which use Markdown, not Org.
 
-
+[org-mode]: org-mode.md
+[Foam]: foam.md
 [org-roam]: https://www.orgroam.com/ "Org-roam Homepage"
 [Obsidian]: https://obsidian.md "A Markdown based note taking tool"
 [Logseq]: https://logseq.com/ "A Markdown based note taking tool written in Clojure"
