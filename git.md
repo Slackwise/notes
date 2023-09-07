@@ -18,7 +18,7 @@ Git LFS
 -------
 A plugin for Git that stores *designated* large files externally, so that the repository itself doesn't get too large or slow to work with.
 
-With LFS, you need to explicitly "track" files using `git lfs track <pattern>`, otherwise they will be treated like all other files. This `<pattern>` is often an **extension** like `.*.pdf`.
+With LFS, you need to explicitly "track" files using `git lfs track <pattern>`, otherwise they will be treated like all other files. This `<pattern>` is often an **extension** like `*.pdf`.
 
 > This command amends your repository's `.gitattributes` file and associates large files with Git LFS. [1]
 
