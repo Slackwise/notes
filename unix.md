@@ -24,7 +24,7 @@ Shells
 A shell is just the way you interact with an operating system, but usually when we talk about a "shell", it's in the context of command-line processing shells like [[bash]], csh, tcsh, zsh, fish, and others. POSIX.
 
 ### The POSIX Shell: `sh`
-Bash as well as other shells will be either compliant with the POSIX standard shell behavior, or when invoked with the name (`argv` 0) of `sh`.
+Bash as well as other shells will be some level POSIX compliant, either by default, via flags, configs, or when invoked with the name (`argv` 0) of `sh`.
 
 ### Login vs Non-Login Shell
 Simply put, a user has a single "login" shell instance, which is the shell they *logged in* with.
