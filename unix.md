@@ -39,6 +39,4 @@ When a POSIX login shell is executed, it will `source` the system-wide `/etc/pro
 ### Interactive vs Non-Interactive Shell
 An interactive shell is one that allows a user to *interact* with it. A non-interactive shell is any shell that is not user facing, such as a sub-shell in a script, or invoked by a program.
 
-Some shells will execute scripts for an interactive but **not** a login shell. This is shell dependent, but is not a POSIX standard.
-
-Bash will `source` the system-wide `/etc/bash.bashrc` config file first, followed by the invoking user's `~/.bashrc`.
+Some shells will execute scripts for an interactive but **not** a login shell. This is shell dependent, and is not a POSIX standard. (Bash's files are documented on the [[Bash]] page.)
