@@ -23,18 +23,18 @@ Shells
 ------
 A shell is just the way you interact with an operating system, but usually when we talk about a "shell", it's in the context of command-line processing shells like [[bash]], csh, tcsh, zsh, fish, and others. POSIX.
 
+
 ### The POSIX Shell: `sh`
 Bash as well as other shells will be some level POSIX compliant, either by default, via flags, configs, or when invoked with the name (`argv` 0) of `sh`.
 
+
 ### Login vs Non-Login Shell
-Simply put, a user has a single "login" shell instance, which is the shell they *logged in* with.
+Simply put, a user has a single "login" shell instance, which is the shell they *logged in* with. This includes when you [[ssh]] into another machine.
 
 When a POSIX login shell is executed, it will `source` the system-wide `/etc/profile` config file, followed by the logging-in user's `~/.profile`.
 
-Bash will also `source` the first file found (and **only** that file!) in the following order:
-- `~/.bash_profile`
-- `~/.bash_login`
-- `~/.profile`
+(Note that Bash will read more files, documented on the [[Bash]] page.)
+
 
 ### Interactive vs Non-Interactive Shell
 An interactive shell is one that allows a user to *interact* with it. A non-interactive shell is any shell that is not user facing, such as a sub-shell in a script, or invoked by a program.
