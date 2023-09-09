@@ -13,9 +13,9 @@ As a **login** shell:
 1. System-wide config:
     -`/etc/profile` (which itself will likely execute every script in `/etc/profile.d/`)
 2. Current-user config: (the first, *and only first*, of these files it can read:)
-    - `~/.bash_profile`
-    - `~/.bash_login`
-    - `~/.profile`
+    1. `~/.bash_profile`
+    2. `~/.bash_login`
+    3. `~/.profile`
 
 As an **interactive non-login** shell, it will instead read:
 1. `/etc/bash.bashrc`
