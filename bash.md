@@ -1,3 +1,14 @@
+---
+date: 2023-09-08
+published: true
+categories: notes
+tags:
+  - software
+  - unix
+  - linux
+---
+
+
 Bash
 ====
 The most popular Unix/Linux shell in use, and the default for most Linux distributions. This document will include history, configuration, tips, and tricks.

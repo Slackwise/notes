@@ -1,3 +1,15 @@
+---
+date: 2023-09-08
+published: true
+categories: notes
+tags:
+  - software
+  - operatingsystems
+  - unix
+  - linux
+---
+
+
 Guix
 ====
 
