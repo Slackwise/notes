@@ -9,6 +9,12 @@ tags:
 
 Cascading Style Sheets (CSS)
 ============================
+I'm not going to explain what and how CSS works. Mozilla did a great job on the MDN with:
+
+- [CSS basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+- [Learn to style HTML using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS)
+
+Instead, most of this page will be tips, tricks, the history, uncommon knowledge, and various subtle things to be mindful of when working CSS.
 
 
 Rules for Semantic and Maintainable CSS
