@@ -24,6 +24,47 @@ Useful Actions/Commands
 `log --stat` will display the log with file changes for each commit.
 
 
+Configure Git for Both Work & Personal Profiles
+-----------------------------------------------
+Git **version 2.36** introduced a new `includeIf` conditional, `hasconfig:remote.*.url:`, which allows you to conditionally load a config file based on if a specific URL exists within the remote config for the repo you are currently working with. With this new feature, you can easily configure Git for home/personal usage, or any given org.
+
+If you're using GitHub, that would look like:
+
+```ini
+# Common Settings:
+[user]
+    name = Firstname Lastname
+# Personal Settings:
+[includeIf "hasconfig:remote.*.url:git@github.com:firstnamelastname/**"]
+    path = "~/.gitconfig-personal"
+# Work Settings:
+[includeIf "hasconfig:remote.*.url:git@github.com:acmeinc/**"]
+    path = "~/.gitconfig-work"
+```
+### Using Only 2 Files
+Or if you don't want 3 files, you can have one just override the others by piling everything into `~/.gitconfig` and then just using `~/.gitconfig-work` to overwrite things like your email address:
+
+#### `~/.gitconfig`
+```ini
+# Personal Settings:
+[user]
+    name = Firstname Lastname
+    email = firstname@lastname.com
+# Work Settings that will add to or overwrite personal settings:
+[includeIf "hasconfig:remote.*.url:gitlab.acmeinc.com/**"]
+    path = "~/.gitconfig-work"
+```
+
+#### `~/.gitconfig-work`
+```ini
+[user]
+    # This will overwrite your personal email address with your work one:
+    email = firstname.lastname@acmeinc.com
+```
+
+### Alternatives to `hasremote`
+Also consider `includeIf "gitdir:"` if this won't work for you, which will include a config fle based on the name/path of the git repository.
+
 Git LFS
 -------
 A plugin for Git that stores *designated* large files externally, so that the repository itself doesn't get too large or slow to work with.
