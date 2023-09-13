@@ -11,8 +11,11 @@ Discord
 The chat app.
 
 
-Undocumented Features/Shortcuts
--------------------------------
+Undocumented or Lesser Known Features/Shortcuts
+-----------------------------------------------
+
+### `/spoiler` For Faster Spoilers
+Rather than manually wrapping an entire message with `||`, you can just use `/spoiler`. The fastest way is to just type `/sp` and hit <kbd>TAB</kbd> to auto-complete.
 
 ### Collapse All Channel Categories
 `Ctr-Shift-A` will collapse all the channel categories on the current server.
