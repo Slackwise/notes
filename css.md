@@ -45,3 +45,20 @@ Instead, leave the base font size alone (or increase it depending on contrast ne
 
 ### Consider detecting user-selected fonts
 If you are creating a website with a large amount of text to read, like a blog, consider detecting that a user has changed their font from the defaults, and rendering or offering that to them. This is going to be most common with people hoping to use a dyslexia friendly font, and you don't want to make it any more difficult for them to read your content!
+
+
+CSS Grid
+--------
+Grid should be used for laying out entire websites, but, now you can use `subgrid` to nest grids to make fully build sites with grids!
+
+### Learning Resources
+- CSS Grid Garden: https://cssgridgarden.com
+
+### Starts / Ends
+- The starts and ends are defined by the **lines** and not the columns/rows created.
+- You can use `end` as the end of a column/row definition.
+- You can use **negative** numbers to count backwards.
+
+### `fr` units
+- Each fraction is relative to the amount of fractions mentioned, so if you create 2 columns of `1fr 3fr` then there are 4 fractional divisions.
+- When using pixels, percentages, or ems, the leftover space is what `fr` uses.
