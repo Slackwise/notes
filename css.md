@@ -22,6 +22,19 @@ Rules for Semantic and Maintainable CSS
 This is a compiled list of rules of what to do or not to do, to write CSS that is the most semantically useful and maintainable.
 
 
+### Each line of CSS is a liability
+So write the minimum CSS you need.
+
+Many properties in CSS will *cascade* down the tree of DOM nodes, and if you graph out the relationship of every single declaraction/rule you've written, you will be horrified at how complex it becomes. Your goal should be to write as little as possible to get the desired end result, and [avoid overrides][#avoid-overrides].
+
+
+### Avoid Overrides
+When you look at your styles in the Chrome Dev Tools, a crossed-out property means it was overriden via the cascade, specificity, or order in the file. Your goal should be to write CSS that has the minimum overrides, because those are an indicator that you're fighting the rules you've put into place.
+
+An easy way to start with less overrides, is to follow the "mobile first" approach, which is more of a "simpler layout first" approach, as mobile layouts tend to linear and simpler. Then add on more from there, rather than override.
+
+
+
 ### Use *lower* contrast dark themes
 People with an astigmatism have trouble reading bright white text on pitch black backgrounds. Astigmatism affects [30% to 60% of all people][astigmatism] (depending on age), including myself. It causes an effect known as "[halation]", which makes the edges of letters blur or glow, as the literal white pixels of the screen are *beaming* light right into our warped corneas. You can lessen this boundary by surrounding it with more light--by reducing the contrast between the text and its background. And just avoid pure white when possible, opting for a slightly grey text.
 
