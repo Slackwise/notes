@@ -35,7 +35,7 @@ I'm compiling my schedule according to: https://www.thestrangeloop.com/schedule.
 | Start   | End     | Location          | Description                |
 | ------- | ------- | ----------------  | -------------------------- |
 |  9:30am | 10:10am | US Regency **AB** | [Playable Gameboy Quotes]  |
-| 10:20am | 11:00am | UNDECIDED         | UNDECIDED                  |
+| 10:20am | 11:00am | UNDECIDED         | [Chrome Certs]             |
 | 11:00am |  1:00pm | Union Station     | [Friday Lunch]             |
 |         |         | UNDECIDED         | UNDECIDED                  |
 |         |         | UNDECIDED         | UNDECIDED                  |
@@ -64,3 +64,4 @@ I'm compiling my schedule according to: https://www.thestrangeloop.com/schedule.
 [Randall Munroe talk]: https://www.thestrangeloop.com/2023/drawing-comics-at-work.html
 [Closing]: https://www.thestrangeloop.com/2023/closing.html
 [Reception & Book Signing]: https://www.thestrangeloop.com/2023/closing-reception-and-signing.html
+[Chrome Certs]: https://www.thestrangeloop.com/2023/didnt-chrome-already-have-a-root-store.html
