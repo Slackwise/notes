@@ -38,7 +38,7 @@ I'm compiling my schedule according to: https://www.thestrangeloop.com/schedule.
 | 10:20am | 11:00am | US Regency **AB** | [Chrome Certs]             |
 | 11:00am |  1:00pm | Union Station     | [Friday Lunch]             |
 | 11:30am | 12:10pm | US Grand **ABC**  | [Spoken Language Editing]  |
-|         |         | UNDECIDED         | UNDECIDED                  |
+| 12:00pm | 12:40pm | US Regency **AB** | [Banking Trojan]           |
 |  1:40pm |  2:20pm | Theater           | [Alex Miller talk]         |
 |  2:30pm |  3:15pm | Theater           | [Julia Evans talk]         |
 |  3:30pm |  4:15pm | Theater           | [Randall Munroe talk]      |
@@ -66,3 +66,4 @@ I'm compiling my schedule according to: https://www.thestrangeloop.com/schedule.
 [Reception & Book Signing]: https://www.thestrangeloop.com/2023/closing-reception-and-signing.html
 [Chrome Certs]: https://www.thestrangeloop.com/2023/didnt-chrome-already-have-a-root-store.html
 [Spoken Language Editing]: https://www.thestrangeloop.com/2023/cursorless-a-spoken-language-for-editing-code.html
+[Banking Trojan]: https://www.thestrangeloop.com/2023/unmasking-the-godfather---reverse-engineering-the-latest-android-banking-trojan.html
