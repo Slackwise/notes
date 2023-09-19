@@ -13,6 +13,8 @@ This was the last [Strange Loop Conference](https://www.thestrangeloop.com/), an
 
 My Planned Schedule
 -------------------
+I'm compiling my schedule according to: https://www.thestrangeloop.com/schedule.html
+
 ### Thursday
 | Start   | End     | Location          | Description                |
 | ------- | ------- | ----------------  | -------------------------- |
@@ -29,7 +31,19 @@ My Planned Schedule
 |  4:35pm |  5:15pm | UNDECIDED         | UNDECIDED                  |
 |  7:00pm |  9:30pm | City Museum       | [Strange Loop Party]       |
 
-
+### Friday
+| Start   | End     | Location          | Description                |
+| ------- | ------- | ----------------  | -------------------------- |
+|  9:30am | 10:10am | US Regency **AB** | [Playable Gameboy Quotes]  |
+| 10:20am | 11:00am | UNDECIDED         | UNDECIDED                  |
+| 11:00am |  1:00pm | Union Station     | [Friday Lunch]             |
+|         |         | UNDECIDED         | UNDECIDED                  |
+|         |         | UNDECIDED         | UNDECIDED                  |
+|  1:40pm |  2:20pm | Theater           | [Alex Miller talk]         |
+|  2:30pm |  3:15pm | Theater           | [Julia Evans talk]         |
+|  3:30pm |  4:15pm | Theater           | [Randall Munroe talk]      |
+|  4:15pm |  4:45pm | Theater           | [Closing]                  |
+|  5:00pm |  6:30pm | Theater           | [Reception & Book Signing] |
 
 
 [Welcome]: https://www.thestrangeloop.com/2023/welcome.html
@@ -43,3 +57,10 @@ My Planned Schedule
 [Thursday Snack]: https://www.thestrangeloop.com/2023/thursday-snack.html
 [Software & Go]: https://www.thestrangeloop.com/2023/software-and-the-game-of-go.html
 [Strange Loop Party]: https://www.thestrangeloop.com/2023/strange-loop-party.html
+[Playable Gameboy Quotes]: https://www.thestrangeloop.com/2023/playable-quotes-for-game-boy-games.html
+[Friday Lunch]: https://www.thestrangeloop.com/2023/friday-lunch.html
+[Alex Miller talk]: https://www.thestrangeloop.com/2023/a-long-strange-loop.html
+[Julia Evans talk]: https://www.thestrangeloop.com/2023/how-to-make-hard-things-easy.html
+[Randall Munroe talk]: https://www.thestrangeloop.com/2023/drawing-comics-at-work.html
+[Closing]: https://www.thestrangeloop.com/2023/closing.html
+[Reception & Book Signing]: https://www.thestrangeloop.com/2023/closing-reception-and-signing.html
