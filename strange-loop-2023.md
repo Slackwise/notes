@@ -25,6 +25,10 @@ My Planned Schedule
 |  1:40pm |  1:40pm | US Grand **F**    | [GitHub Code Search]       |
 |  2:30pm |  3:10pm | US Regency **AB** | [Babashka]                 |
 |  3:10pm |  3:45pm | US Regency **AB** | [Thursday Snack]           |
+|  3:45pm |  4:25pm | US Grand **ABC**  | [Software & Go]            |
+|  4:35pm |  5:15pm | UNDECIDED         | UNDECIDED                  |
+|  7:00pm |  9:30pm | City Museum       | [Strange Loop Party]       |
+
 
 
 
@@ -37,3 +41,5 @@ My Planned Schedule
 [GitHub Code Search]: https://www.thestrangeloop.com/2023/lessons-from-building-github-code-search.html
 [Babashka]: https://www.thestrangeloop.com/2023/babashka-a-meta-circular-clojure-interpreter-for-the-command-line.html
 [Thursday Snack]: https://www.thestrangeloop.com/2023/thursday-snack.html
+[Software & Go]: https://www.thestrangeloop.com/2023/software-and-the-game-of-go.html
+[Strange Loop Party]: https://www.thestrangeloop.com/2023/strange-loop-party.html
