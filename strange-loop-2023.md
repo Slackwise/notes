@@ -35,7 +35,7 @@ I'm compiling my schedule according to: https://www.thestrangeloop.com/schedule.
 | Start   | End     | Location          | Description                |
 | ------- | ------- | ----------------  | -------------------------- |
 |  9:30am | 10:10am | US Regency **AB** | [Playable Gameboy Quotes]  |
-| 10:20am | 11:00am | UNDECIDED         | [Chrome Certs]             |
+| 10:20am | 11:00am | US Regency **AB** | [Chrome Certs]             |
 | 11:00am |  1:00pm | Union Station     | [Friday Lunch]             |
 |         |         | UNDECIDED         | UNDECIDED                  |
 |         |         | UNDECIDED         | UNDECIDED                  |
