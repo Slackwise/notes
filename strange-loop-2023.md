@@ -37,7 +37,7 @@ I'm compiling my schedule according to: https://www.thestrangeloop.com/schedule.
 |  9:30am | 10:10am | US Regency **AB** | [Playable Gameboy Quotes]  |
 | 10:20am | 11:00am | US Regency **AB** | [Chrome Certs]             |
 | 11:00am |  1:00pm | Union Station     | [Friday Lunch]             |
-|         |         | UNDECIDED         | UNDECIDED                  |
+| 11:30am | 12:10pm | US Grand **ABC**  | [Spoken Language Editing]  |
 |         |         | UNDECIDED         | UNDECIDED                  |
 |  1:40pm |  2:20pm | Theater           | [Alex Miller talk]         |
 |  2:30pm |  3:15pm | Theater           | [Julia Evans talk]         |
@@ -65,3 +65,4 @@ I'm compiling my schedule according to: https://www.thestrangeloop.com/schedule.
 [Closing]: https://www.thestrangeloop.com/2023/closing.html
 [Reception & Book Signing]: https://www.thestrangeloop.com/2023/closing-reception-and-signing.html
 [Chrome Certs]: https://www.thestrangeloop.com/2023/didnt-chrome-already-have-a-root-store.html
+[Spoken Language Editing]: https://www.thestrangeloop.com/2023/cursorless-a-spoken-language-for-editing-code.html
