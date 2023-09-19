@@ -28,7 +28,7 @@ I'm compiling my schedule according to: https://www.thestrangeloop.com/schedule.
 |  2:30pm |  3:10pm | US Regency **AB** | [Babashka]                 |
 |  3:10pm |  3:45pm | US Regency **AB** | [Thursday Snack]           |
 |  3:45pm |  4:25pm | US Grand **ABC**  | [Software & Go]            |
-|  4:35pm |  5:15pm | UNDECIDED         | UNDECIDED                  |
+|  4:35pm |  5:15pm | US Regency **AB** | [RDP Attacks]              |
 |  7:00pm |  9:30pm | City Museum       | [Strange Loop Party]       |
 
 ### Friday
@@ -67,3 +67,4 @@ I'm compiling my schedule according to: https://www.thestrangeloop.com/schedule.
 [Chrome Certs]: https://www.thestrangeloop.com/2023/didnt-chrome-already-have-a-root-store.html
 [Spoken Language Editing]: https://www.thestrangeloop.com/2023/cursorless-a-spoken-language-for-editing-code.html
 [Banking Trojan]: https://www.thestrangeloop.com/2023/unmasking-the-godfather---reverse-engineering-the-latest-android-banking-trojan.html
+[RDP Attacks]: https://www.thestrangeloop.com/2023/the-level-of-human-involvement-behind-remote-desktop-protocol-brute-force-attacks.html
