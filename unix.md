@@ -5,7 +5,6 @@ categories: notes
 tags:
   - software
   - operatingsystems
-  - unix
   - linux
 ---
 
