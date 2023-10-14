@@ -36,12 +36,12 @@ An easy way to start with less overrides, is to follow the "mobile first" approa
 
 
 ### Use *lower* contrast dark themes
-People with an astigmatism have trouble reading bright white text on pitch black backgrounds. Astigmatism affects [30% to 60% of all people][astigmatism] (depending on age), including myself. It causes an effect known as "[halation]", which makes the edges of letters blur or glow, as the literal white pixels of the screen are *beaming* light right into our warped corneas. You can lessen this boundary by surrounding it with more light--by reducing the contrast between the text and its background. And just avoid pure white when possible, opting for a slightly grey text.
+People with an astigmatism have trouble reading bright white text on pitch black backgrounds. Astigmatism affects [almost half of the population][astigmatism] (depending on age), including myself. It causes an effect known as "[halation]", which makes the edges of letters blur or glow, as the literal white pixels of the screen are *beaming* light right into our warped corneas. You can lessen this boundary by surrounding it with more light--by reducing the contrast between the text and its background. And just avoid pure white when possible, opting for a slightly grey text.
 
 Those with general focus issues, such as the near blind or legally blind, likely prefer *more* contrast, and you should use [`prefers-contrast`][prefers-contrast] to render a higher contrast version for them.
 
 [astigmatism]: https://www.levelaccess.com/blog/accessibility-for-people-with-astigmatism/
-[halation]: https://www.levelaccess.com/blog/accessibility-for-people-with-astigmatism/'
+[halation]: https://bootcamp.uxdesign.cc/why-dark-mode-isnt-a-ux-panacea-1590226e5ba4
 [prefers-contrast]: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-contrast
 
 
