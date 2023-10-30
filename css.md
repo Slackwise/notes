@@ -17,6 +17,32 @@ I'm not going to explain what and how CSS works. Mozilla did a great job on the 
 Instead, most of this page will be tips, tricks, the history, uncommon knowledge, and various subtle things to be mindful of when working CSS.
 
 
+Tips & Tricks
+-------------
+Some maybe non-obvious tips and tricks, or some important facts to keep in mind when working with CSS.
+
+### `Block` Displayed Elements
+- Will force a newline.
+- Will always ***stack vertically*** on top of each other.
+
+### `Inline` Display Elements
+- Don't force newlines.
+- Will have an [anonymous box].
+- Cannot have a height.
+- Cannot have a margin.
+- Can have a padding, but it won't impact the actual layout. (Will impact outlines.)
+
+[anonymous box]: https://developer.mozilla.org/en-US/docs/Web/CSS/Visual_formatting_model#anonymous_boxes
+
+### `InlineBlock` Display Elements
+
+### Lists
+- Items display as `list-item`, which is an `inline` element with a `::marker` bullet on the left similar to a `::before` pseudo-element.
+- The `::marker` CSS pseudo-element:
+  - represents the bullet of a list, but is not very style-able.
+  - Renders as an `inline`-ish element, so you cannot even position it.
+
+
 Rules for Semantic and Maintainable CSS
 ---------------------------------------
 This is a compiled list of rules of what to do or not to do, to write CSS that is the most semantically useful and maintainable.
