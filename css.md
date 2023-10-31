@@ -21,11 +21,11 @@ Tips & Tricks
 -------------
 Some maybe non-obvious tips and tricks, or some important facts to keep in mind when working with CSS.
 
-### `Block` Displayed Elements
+### `block` Displayed Elements
 - Will force a newline.
 - Will always ***stack vertically*** on top of each other.
 
-### `Inline` Display Elements
+### `inline` Display Elements
 - Don't force newlines.
 - Will have an [anonymous box].
 - Cannot have a height.
@@ -34,7 +34,11 @@ Some maybe non-obvious tips and tricks, or some important facts to keep in mind 
 
 [anonymous box]: https://developer.mozilla.org/en-US/docs/Web/CSS/Visual_formatting_model#anonymous_boxes
 
-### `InlineBlock` Display Elements
+### `inline-block` Display Elements
+- Won't start new line.
+- Can sit side-by-side other `inline`/`inline-block` elements.
+- Can set height.
+- Can set margin.
 
 ### Lists
 - Items display as `list-item`, which is an `inline` element with a `::marker` bullet on the left similar to a `::before` pseudo-element.
