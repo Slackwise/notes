@@ -21,6 +21,11 @@ Tips & Tricks
 -------------
 Some maybe non-obvious tips and tricks, or some important facts to keep in mind when working with CSS.
 
+### `<body>` Element
+- Default 8px margin all around
+- Full width `block` element
+- Height is minimum required (`auto`)
+
 ### `block` Displayed Elements
 - Will force a newline.
 - Will always ***stack vertically*** on top of each other.
@@ -43,8 +48,23 @@ Some maybe non-obvious tips and tricks, or some important facts to keep in mind 
 ### Lists
 - Items display as `list-item`, which is an `inline` element with a `::marker` bullet on the left similar to a `::before` pseudo-element.
 - The `::marker` CSS pseudo-element:
-  - represents the bullet of a list, but is not very style-able.
-  - Renders as an `inline`-ish element, so you cannot even position it.
+    - represents the bullet of a list, but is not very style-able.
+    - Renders as an `inline`-ish element, so you cannot even position it.
+
+### CSS Grid
+Grid should be used for laying out entire websites, but, now you can use `subgrid` to nest grids to make fully build sites with grids!
+
+#### Learning Resources
+- CSS Grid Garden: https://cssgridgarden.com
+
+#### Starts / Ends
+- The starts and ends are defined by the **lines** and not the columns/rows created.
+- You can use `end` as the end of a column/row definition.
+- You can use **negative** numbers to count backwards.
+
+#### `fr` units
+- Each fraction is relative to the amount of fractions mentioned, so if you create 2 columns of `1fr 3fr` then there are 4 fractional divisions.
+- When using pixels, percentages, or ems, the leftover space is what `fr` uses.
 
 
 Rules for Semantic and Maintainable CSS
@@ -62,7 +82,6 @@ Many properties in CSS will *cascade* down the tree of DOM nodes, and if you gra
 When you look at your styles in the Chrome Dev Tools, a crossed-out property means it was overriden via the cascade, specificity, or order in the file. Your goal should be to write CSS that has the minimum overrides, because those are an indicator that you're fighting the rules you've put into place.
 
 An easy way to start with less overrides, is to follow the "mobile first" approach, which is more of a "simpler layout first" approach, as mobile layouts tend to linear and simpler. Then add on more from there, rather than override.
-
 
 
 ### Use *lower* contrast dark themes
@@ -93,20 +112,3 @@ If you are creating a website with a large amount of text to read, like a blog, 
 If you're supporting RTL languages like Arabic, rather than using left or right for organizing text and items, you can use a [logical] *start* and *end* now. Consider these if you're writing a multi-lingual website or web app.
 
 [logical]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values/Basic_concepts_of_logical_properties_and_values
-
-
-CSS Grid
---------
-Grid should be used for laying out entire websites, but, now you can use `subgrid` to nest grids to make fully build sites with grids!
-
-### Learning Resources
-- CSS Grid Garden: https://cssgridgarden.com
-
-### Starts / Ends
-- The starts and ends are defined by the **lines** and not the columns/rows created.
-- You can use `end` as the end of a column/row definition.
-- You can use **negative** numbers to count backwards.
-
-### `fr` units
-- Each fraction is relative to the amount of fractions mentioned, so if you create 2 columns of `1fr 3fr` then there are 4 fractional divisions.
-- When using pixels, percentages, or ems, the leftover space is what `fr` uses.
