@@ -89,6 +89,11 @@ Instead, leave the base font size alone (or increase it depending on contrast ne
 ### Consider detecting user-selected fonts
 If you are creating a website with a large amount of text to read, like a blog, consider detecting that a user has changed their font from the defaults, and rendering or offering that to them. This is going to be most common with people hoping to use a dyslexia friendly font, and you don't want to make it any more difficult for them to read your content!
 
+### Use Logical Properties/Values
+If you're supporting RTL languages like Arabic, rather than using left or right for organizing text and items, you can use a [logical] *start* and *end* now. Consider these if you're writing a multi-lingual website or web app.
+
+[logical]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values/Basic_concepts_of_logical_properties_and_values
+
 
 CSS Grid
 --------
