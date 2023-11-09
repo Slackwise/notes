@@ -17,7 +17,7 @@ Glossary
 --------
 [Channel](https://guix.gnu.org/manual/en/html_node/Channels.html): A repository of packages to mix into the official repository, similar to a "repository" in Debian/dpkg terminology.
 
-Profile: A collection of packages representing an environment. Basically a `$PATH` that has specific packages associated with it. A user can have any number of profiles, and can also create development-only profiles via [Guix Shell](#guix-shell).
+[Profile](https://guix.gnu.org/cookbook/en/html_node/Guix-Profiles-in-Practice.html): A collection of packages representing an environment. Basically a `$PATH` that has specific packages associated with it. A user can have any number of profiles, and can also create development-only profiles via [Guix Shell](#guix-shell).
 
 [Substitute](https://guix.gnu.org/manual/en/html_node/Substitutes.html): A binary package (usually) that replaces a locally compiled package.
 
