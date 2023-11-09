@@ -13,6 +13,14 @@ tags:
 Guix
 ====
 
+Guix Package Manager on Other Distros
+-------------------------------------
+You can install Guix as another package manager on other systems like Debian and Ubuntu. This allows you to include packages that their repositories often lack, or have an outdated version for.
+
+### Avoiding Issues
+When you do install Guix on another distro, there are a few dependencies you should keep in mind: https://guix.gnu.org/manual/en/html_node/Application-Setup.html
+
+
 Guix Shell
 ----------
 Similar to [[Ruby]]'s `RVM` or [[Python]]'s `venv`, except with [Guix Shell] you can create an entire system environment for development, local to that software project.
