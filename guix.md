@@ -28,6 +28,12 @@ You can install Guix as another package manager on other systems like Debian and
 ### Avoiding Issues
 When you do install Guix on another distro, there are a few dependencies you should keep in mind: https://guix.gnu.org/manual/en/html_node/Application-Setup.html
 
+Rolling Back
+------------
+> After having rolled back, installing, removing, or upgrading packages overwrites previous future generations. Thus, the history of the generations in a profile is always linear.
+
+-- https://guix.gnu.org/manual/en/html_node/Invoking-guix-package.html#index-rolling-back
+
 
 Guix Shell
 ----------
