@@ -37,6 +37,10 @@ Similar to [[Ruby]]'s `RVM` or [[Python]]'s `venv`, except with [Guix Shell] you
 
 Common Actions
 --------------
+The Guix developers provide a [Cookbook] of common actions/solutions as well.
+
+[Cookbook]: https://guix.gnu.org/cookbook/en/html_node/
+
 
 ### List (Explicitly) Installed Packages
 
