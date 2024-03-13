@@ -13,6 +13,13 @@ tags:
 Guix
 ====
 
+Name Origin
+-----------
+The name "Guix" comes from [an homage to both Guile and Nix][origin], and is meant to be pronounced as "geeks". Obviously, Guix uses Guile, and was inspired by Nix, and originally used the `nix-worker` daemon.
+
+[origin]: https://guix.gnu.org/en/blog/2022/10-years-of-stories-behind-guix/
+
+
 Glossary
 --------
 [Channel](https://guix.gnu.org/manual/en/html_node/Channels.html): A repository of packages to mix into the official repository, similar to a "repository" in Debian/dpkg terminology.
