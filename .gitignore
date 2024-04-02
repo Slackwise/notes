@@ -2,3 +2,4 @@
 out/
 private
 private/
+.foam/templates/*-private-note.md
