@@ -5,16 +5,9 @@ if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
     exit
 }
 
-echo "Script root:"
-echo $PSScriptRoot
-
 # Define source and destination directories
 $sourceDirectory = "$PSScriptRoot\..\private\.foam\templates"
 $destinationDirectory = "$PSScriptRoot\..\.foam\templates"
-
-echo $sourceDirectory
-
-echo $destinationDirectory
 
 # Check if the source directory exists
 if (-not (Test-Path -Path $sourceDirectory -PathType Container)) {
