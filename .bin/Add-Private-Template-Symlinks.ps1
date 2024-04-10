@@ -31,7 +31,7 @@ foreach ($file in $files) {
     # Check if symlink already exists
     if (-not (Test-Path -Path $linkPath -PathType Leaf)) {
         # Create symlink
-        New-Item -ItemType SymbolicLink -Path $linkPath -Value $targetPath
+        New-Item -ItemType HardLink -Path $linkPath -Value $targetPath
         Write-Host "Symlink created for $($file.Name)"
     } else {
         Write-Host "Symlink already exists for $($file.Name)"
