@@ -16,7 +16,7 @@ Services
 --------
 When creating a background service, you can and *should* [create a "role account"][RA] via `sysadminctl -roleAction`.
 
-Role accounts require name starting with `_` and UID in 200-400 range.
+Role accounts require name starting with `_` and UID in 200-400 range. When creating an account with `sysadminctl`, you will **need to** provide said UID.
 
 
 [RA]: https://forums.developer.apple.com/forums/thread/692593 "Apple engineer answering that services should use 'role accounts'"
