@@ -59,13 +59,20 @@ Grid should be used for laying out entire websites, but, now you can use `subgri
 - [CSS Grid Garden](https://cssgridgarden.com): A short game that teaches you grid by asking you to position elements correctly using Grid.
 
 #### General Concepts
+- Grid items span only one column and row track by default.
+- The `template` properties are the definitions of the Grid itself, and belong only on the container element, not the elements within it.
+- The non-`template` properties are for defining how an element will position itself on the grid.
 - `grid-auto-flow` is used to define the direction items are placed as they're encountered in the container, when no specific location is defined by `grid-template-*` or `grid-area`.
     - The "auto flow" will place elements according to flow direction, filling up all defined `grid-template-*` tracks before creating implicit tracks (in the `grid-auto-flow` direction).
 
-#### Starts / Ends
+#### Column/Row Starts & Ends
 - The starts and ends are defined by the **lines** and not the columns/rows created.
 - You can use `end` as the end of a column/row definition.
 - You can use **negative** numbers to count backwards.
+
+#### Grid Areas
+- An area is just a span of columns and rows. 
+- An area can be named and then referenced by the elements to be positioned on the grid.
 
 #### `fr` units
 - Each fraction is relative to the amount of fractions mentioned, so if you create 2 columns of `1fr 3fr` then there are 4 fractional divisions.
