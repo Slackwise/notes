@@ -55,7 +55,11 @@ Some maybe non-obvious tips and tricks, or some important facts to keep in mind 
 Grid should be used for laying out entire websites, but, now you can use `subgrid` to nest grids to make fully build sites with grids!
 
 #### Learning Resources
-- CSS Grid Garden: https://cssgridgarden.com
+- [Learn CSS Grid](https://learncssgrid.com): A visual guide to learning Grid, step by step.
+- [CSS Grid Garden](https://cssgridgarden.com): A short game that teaches you grid by asking you to position elements correctly using Grid.
+
+#### General Concepts
+- `grid-auto-flow` is used to define the direction items are placed as they're encountered in the container, when no specific location is defined by `grid-template-*` or `grid-area`.
 
 #### Starts / Ends
 - The starts and ends are defined by the **lines** and not the columns/rows created.
