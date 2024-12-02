@@ -73,6 +73,7 @@ Grid should be used for laying out entire websites, but, now you can use `subgri
 #### Grid Areas
 - An area is just a span of columns and rows. 
 - An area can be named and then referenced by the elements to be positioned on the grid.
+- One or more `.`s creates an unnamed "null cell" in the grid, which is ideal for margin areas.
 
 #### `fr` units
 - Each fraction is relative to the amount of fractions mentioned, so if you create 2 columns of `1fr 3fr` then there are 4 fractional divisions.
