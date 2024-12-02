@@ -60,6 +60,7 @@ Grid should be used for laying out entire websites, but, now you can use `subgri
 
 #### General Concepts
 - `grid-auto-flow` is used to define the direction items are placed as they're encountered in the container, when no specific location is defined by `grid-template-*` or `grid-area`.
+    - The "auto flow" will place elements according to flow direction, filling up all defined `grid-template-*` tracks before creating implicit tracks (in the `grid-auto-flow` direction).
 
 #### Starts / Ends
 - The starts and ends are defined by the **lines** and not the columns/rows created.
