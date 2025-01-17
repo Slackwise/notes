@@ -44,6 +44,7 @@ Some maybe non-obvious tips and tricks, or some important facts to keep in mind 
 - Can sit side-by-side other `inline`/`inline-block` elements.
 - Can set height.
 - Can set margin.
+- Can set padding.
 
 ### Lists
 - Items display as `list-item`, which is an `inline` element with a `::marker` bullet on the left similar to a `::before` pseudo-element.
