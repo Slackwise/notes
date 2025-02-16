@@ -54,6 +54,11 @@ The Guix developers provide a [Cookbook] of common actions/solutions as well.
 
 [Cookbook]: https://guix.gnu.org/cookbook/en/html_node/
 
+### Modifying the System Configuration
+When you install GuixSD for the first time, the initial system configuration will be available in `/etc/config.scm`. The current config of the system at this moment, will also be available in `/run/guix/configuration.scm`.
+
+To modify the system configuration, create a copy of one of the mentioned `.scm` files, edit the file, and then run `guix system reconfigure `the-new-file-you-created.scm`.
+
 
 ### List (Explicitly) Installed Packages
 
