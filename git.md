@@ -23,6 +23,11 @@ Useful Actions/Commands
 ### Show Log with File Changes
 `log --stat` will display the log with file changes for each commit.
 
+### Compare Two Branches
+To compare the *commits*, use `git cherry -v otherbranchname`.
+
+To compare the actual *code* changes, use `git diff otherbranchname`.
+
 
 Configure Git for Both Work & Personal Profiles
 -----------------------------------------------
