@@ -14,7 +14,7 @@ $FOAM_TITLE
 (Meeting purpose)
 
 Participants:
-- Adam Flancewski
+- Adam Flanczewski
 
 Meeting held on ${FOAM_DATE_YEAR}-${FOAM_DATE_MONTH}-${FOAM_DATE_DATE} @ $CURRENT_HOUR:$CURRENT_MINUTE
 
