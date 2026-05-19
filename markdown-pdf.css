@@ -1,0 +1,35 @@
+/* This file is meant for the "Markdown PDF" extension: 
+   https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Condensed';
+}
+
+body {
+  font-family: 'Roboto Slab';
+}
+
+li {
+  list-style: square;
+}
+
+ul ul {
+  padding-left: 20px;
+}
+
+a {
+  font-family: 'Roboto Condensed';
+  color: blue;
+}
+
+code {
+  font-family: 'Roboto Mono';
+  font-size: 80%;
+}
+
+p code {
+  color: darkblue !important;
+}
