@@ -1,32 +1,18 @@
 {
-  // Command Palette -> "Tasks: Run Task" -> pick one of the entries below.
+  // Command Palette -> "Tasks: Run Task" -> "Jira Release Notes".
+  //
+  // The repository and branches are asked for by VS Code up front. The release
+  // version is still chosen inside the terminal, because that list is pulled
+  // live from Jira and cannot be hard-coded here.
+  //
+  // "type": "process" launches pwsh directly instead of going through a shell.
+  // That matters because the default terminal profile is Git Bash, which would
+  // otherwise eat the backslashes in ${workspaceFolder}.
   "version": "2.0.0",
   "tasks": [
     {
       "label": "Jira Release Notes",
-      "detail": "Prompts for repository and release version, then writes private/work/releases/jira-release-VERSION.md",
-      "type": "process",
-      "command": "pwsh",
-      "args": [
-        "-NoProfile",
-        "-NoLogo",
-        "-File",
-        "${workspaceFolder}\\private\\work\\.bin\\New-JiraReleaseNotes.ps1"
-      ],
-      "options": {
-        "cwd": "${workspaceFolder}\\private\\work"
-      },
-      "problemMatcher": [],
-      "presentation": {
-        "reveal": "always",
-        "panel": "dedicated",
-        "focus": true,
-        "clear": true
-      }
-    },
-    {
-      "label": "Jira Release Notes (choose branches)",
-      "detail": "Same, but also asks for the repository, source branch and destination branch up front",
+      "detail": "Compare a repo's branches and write private/work/releases/jira-release-VERSION.md",
       "type": "process",
       "command": "pwsh",
       "args": [
@@ -55,14 +41,43 @@
   ],
   "inputs": [
     {
+      // An empty value makes the script fall back to its own prompt, which
+      // enumerates ~/src at run time and so is never out of date.
       "id": "repository",
-      "type": "promptString",
-      "description": "Repository folder name under ~/src"
+      "type": "pickString",
+      "description": "Repository to compare",
+      "default": "",
+      "options": [
+        { "label": "$(list-unordered) Show me the live list in the terminal", "value": "" },
+        "agencyapplication",
+        "agencyservices",
+        "batch",
+        "blog",
+        "bulkactions",
+        "commonlibrary",
+        "consumerportal",
+        "coreframework",
+        "databases",
+        "Diamond",
+        "employeeportal",
+        "falcon_scripts",
+        "FalconForms",
+        "insuredportal",
+        "mobileapp",
+        "MobileApps",
+        "notificationservices",
+        "Publisher",
+        "reports",
+        "scanner",
+        "shine",
+        "visualcron-tasks",
+        "webetl"
+      ]
     },
     {
       "id": "sourceBranch",
       "type": "promptString",
-      "description": "Source branch (commits to release)",
+      "description": "Source branch (holds the commits to release)",
       "default": "master"
     },
     {
