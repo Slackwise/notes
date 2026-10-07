@@ -5,16 +5,16 @@
     {
       "label": "Jira Release Notes",
       "detail": "Prompts for repository and release version, then writes private/work/releases/jira-release-VERSION.md",
-      "type": "shell",
+      "type": "process",
       "command": "pwsh",
       "args": [
         "-NoProfile",
         "-NoLogo",
         "-File",
-        "${workspaceFolder}/private/work/.bin/New-JiraReleaseNotes.ps1"
+        "${workspaceFolder}\\private\\work\\.bin\\New-JiraReleaseNotes.ps1"
       ],
       "options": {
-        "cwd": "${workspaceFolder}/private/work"
+        "cwd": "${workspaceFolder}\\private\\work"
       },
       "problemMatcher": [],
       "presentation": {
@@ -27,13 +27,13 @@
     {
       "label": "Jira Release Notes (choose branches)",
       "detail": "Same, but also asks for the repository, source branch and destination branch up front",
-      "type": "shell",
+      "type": "process",
       "command": "pwsh",
       "args": [
         "-NoProfile",
         "-NoLogo",
         "-File",
-        "${workspaceFolder}/private/work/.bin/New-JiraReleaseNotes.ps1",
+        "${workspaceFolder}\\private\\work\\.bin\\New-JiraReleaseNotes.ps1",
         "-Repository",
         "${input:repository}",
         "-SourceBranch",
@@ -42,7 +42,7 @@
         "${input:destinationBranch}"
       ],
       "options": {
-        "cwd": "${workspaceFolder}/private/work"
+        "cwd": "${workspaceFolder}\\private\\work"
       },
       "problemMatcher": [],
       "presentation": {
