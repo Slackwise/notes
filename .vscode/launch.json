@@ -1,0 +1,48 @@
+{
+  // Run via the Run menu -> Start Debugging / Run Without Debugging (F5 / Ctrl+F5).
+  // Requires the ms-vscode.powershell extension.
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Jira Release Notes (prompt for repo + version)",
+      "type": "PowerShell",
+      "request": "launch",
+      "script": "${workspaceFolder}/private/work/.bin/New-JiraReleaseNotes.ps1",
+      "cwd": "${workspaceFolder}/private/work"
+    },
+    {
+      "name": "Jira Release Notes (pick branches too)",
+      "type": "PowerShell",
+      "request": "launch",
+      "script": "${workspaceFolder}/private/work/.bin/New-JiraReleaseNotes.ps1",
+      "args": [
+        "-Repository",
+        "${input:repository}",
+        "-SourceBranch",
+        "${input:sourceBranch}",
+        "-DestinationBranch",
+        "${input:destinationBranch}"
+      ],
+      "cwd": "${workspaceFolder}/private/work"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "repository",
+      "type": "promptString",
+      "description": "Repository folder name under ~/src"
+    },
+    {
+      "id": "sourceBranch",
+      "type": "promptString",
+      "description": "Source branch (commits to release)",
+      "default": "master"
+    },
+    {
+      "id": "destinationBranch",
+      "type": "promptString",
+      "description": "Destination branch (already deployed)",
+      "default": "prod"
+    }
+  ]
+}
