@@ -1,9 +1,14 @@
 {
-  // Command Palette -> "Tasks: Run Task" -> "Jira Release Notes".
+  // Command Palette -> "Tasks: Run Task" -> pick one of the two below.
   //
-  // The repository and branches are asked for by VS Code up front. The release
-  // version is still chosen inside the terminal, because that list is pulled
-  // live from Jira and cannot be hard-coded here.
+  // Single Repository: VS Code asks for the repo and both branches up front, so
+  // the terminal only asks for the release version.
+  //
+  // Multiple Repositories: VS Code asks nothing and the script loops in the
+  // terminal, taking a repository name plus that repository's own source and
+  // destination branch each time around. VS Code task inputs cannot multi-select
+  // (pickString has no canPickMany), which is why this one is driven entirely
+  // from the terminal.
   //
   // "type": "process" launches pwsh directly instead of going through a shell.
   // That matters because the default terminal profile is Git Bash, which would
@@ -11,8 +16,8 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Jira Release Notes",
-      "detail": "Compare a repo's branches and write private/work/releases/jira-release-VERSION.md",
+      "label": "Jira Release Notes: Single Repository",
+      "detail": "Pick one repo and its branches here, then choose the release version in the terminal",
       "type": "process",
       "command": "pwsh",
       "args": [
@@ -37,18 +42,36 @@
         "focus": true,
         "clear": true
       }
+    },
+    {
+      "label": "Jira Release Notes: Multiple Repositories",
+      "detail": "Add repositories one at a time in the terminal, each with its own branches",
+      "type": "process",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-NoLogo",
+        "-File",
+        "${workspaceFolder}\\private\\work\\.bin\\New-JiraReleaseNotes.ps1"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}\\private\\work"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "focus": true,
+        "clear": true
+      }
     }
   ],
   "inputs": [
     {
-      // An empty value makes the script fall back to its own prompt, which
-      // enumerates ~/src at run time and so is never out of date.
       "id": "repository",
       "type": "pickString",
       "description": "Repository to compare",
-      "default": "",
       "options": [
-        { "label": "$(list-unordered) Show me the live list in the terminal", "value": "" },
         "agencyapplication",
         "agencyservices",
         "batch",
