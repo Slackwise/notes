@@ -1,0 +1,75 @@
+{
+  // Command Palette -> "Tasks: Run Task" -> pick one of the entries below.
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Jira Release Notes",
+      "detail": "Prompts for repository and release version, then writes private/work/releases/jira-release-VERSION.md",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-NoLogo",
+        "-File",
+        "${workspaceFolder}/private/work/.bin/New-JiraReleaseNotes.ps1"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/private/work"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "focus": true,
+        "clear": true
+      }
+    },
+    {
+      "label": "Jira Release Notes (choose branches)",
+      "detail": "Same, but also asks for the repository, source branch and destination branch up front",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-NoLogo",
+        "-File",
+        "${workspaceFolder}/private/work/.bin/New-JiraReleaseNotes.ps1",
+        "-Repository",
+        "${input:repository}",
+        "-SourceBranch",
+        "${input:sourceBranch}",
+        "-DestinationBranch",
+        "${input:destinationBranch}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/private/work"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "focus": true,
+        "clear": true
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "repository",
+      "type": "promptString",
+      "description": "Repository folder name under ~/src"
+    },
+    {
+      "id": "sourceBranch",
+      "type": "promptString",
+      "description": "Source branch (commits to release)",
+      "default": "master"
+    },
+    {
+      "id": "destinationBranch",
+      "type": "promptString",
+      "description": "Destination branch (already deployed)",
+      "default": "prod"
+    }
+  ]
+}
